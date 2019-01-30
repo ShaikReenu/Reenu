@@ -1,0 +1,22 @@
+import matplotlib.pyplot as mp
+import numpy as np
+t=np.arange(0,15,1)
+x1=np.sin(2*np.pi*t)
+mp.subplot(1,3,1)
+mp.stem(t,x1)
+mp.title('sinwave')
+mp.xlabel('---->time')
+mp.ylabel('---->amplitude')
+x2=np.sin(2*np.pi*t)
+mp.subplot(1,3,2)
+mp.stem(t,x2)
+mp.title('cos wave')
+mp.xlabel('----->time')
+mp.ylabel('----->amplitude')
+z=x1+x2
+mp.subplot(1,3,3)
+mp.stem(t,z)
+mp.title('addition of sin and cos')
+mp.xlabel('---->time')
+mp.ylabel('---->amplitude')
+mp.show( )
